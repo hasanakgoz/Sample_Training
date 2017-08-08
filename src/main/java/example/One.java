@@ -10,4 +10,9 @@ public class One {
 	public void uncoveredMethod() {
 		System.out.println(foo());
 	}
+	
+	
+	// Cookie c = new Cookie(SECRET, secret); // Noncompliant; cookie is not
+	// secure
+	// response.addCookie(c);
 }
