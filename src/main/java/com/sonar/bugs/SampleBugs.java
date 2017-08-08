@@ -20,7 +20,7 @@ public class SampleBugs {
 		BigDecimal bd3 = BigDecimal.valueOf(d);
 		BigDecimal bd4 = BigDecimal.valueOf(1.1);
 
-		System.out.println("Noncompliant " + bd1 + " " + bd2 + " Compliant: " + bd3 + " " + bd4);
+		System.out.println("Noncompliant " + bd1 + " " + bd2 + " Compliant: ******************************************************************************" + bd3 + " " + bd4);
 
 		Long l1 = Long.valueOf(1);
 		Long l2 = Long.valueOf(2);

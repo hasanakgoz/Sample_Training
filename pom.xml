@@ -22,20 +22,12 @@
 	<build>
 		<finalName>Sample</finalName>
 		<plugins>
-			<!-- <plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
 				<version>2.17</version>
-				<dependencies>
-					<dependency>
-						<groupId>com.puppycrawl.tools</groupId>
-						<artifactId>checkstyle</artifactId>
-						<version>6.1.1</version>
-					</dependency>
-				</dependencies>
 				<executions>
 					<execution>
-						<id>checkstyle-check</id>
 						<phase>verify</phase>
 						<goals>
 							<goal>check</goal>
@@ -44,25 +36,23 @@
 							<sourceDirectories>${project.basedir}</sourceDirectories>
 							<includes>pom.xml,src/**/*.java,src/**/*.properties,src/**/*.xml</includes>
 							<excludes>**/generated/**</excludes>
-							<cacheFile>${checkstyle.cache.dir}/cachefile</cacheFile>
 							<outputFile>${checkstyle.reports.dir}/checkstyle-result.xml</outputFile>
-							<configLocation>src/main/resources/checkstyle-checks.xml</configLocation>
-							<propertyExpansion>config_loc=${checkstyle.cache.dir}/</propertyExpansion>
+							<configLocation>src\main\resources\checkstyle-checks.xml</configLocation>
 						</configuration>
 					</execution>
 				</executions>
-			</plugin> -->
+			</plugin>
 		</plugins>
 	</build>
 
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
-<dependency>
-    <groupId>javax.servlet</groupId>
-    <artifactId>servlet-api</artifactId>
-    <version>2.5</version>
-    <scope>provided</scope>
-</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
 
 
 	</dependencies>
