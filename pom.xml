@@ -41,8 +41,19 @@
 					</rulesets>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+				<version>3.0.1</version>
+				<configuration>
+					<includeFilterFile>src\main\resources\find-bugs.xml</includeFilterFile>
+				</configuration>
+			</plugin>
 		</plugins>
 	</reporting>
+
+
 	<build>
 		<finalName>Sample</finalName>
 		<plugins>
@@ -57,7 +68,6 @@
 							<goal>check</goal>
 						</goals>
 						<configuration>
-							<sourceDirectories>${project.basedir}</sourceDirectories>
 							<includes>pom.xml,src/**/*.java,src/**/*.properties,src/**/*.xml</includes>
 							<excludes>**/generated/**</excludes>
 							<outputFile>${checkstyle.reports.dir}/checkstyle-result.xml</outputFile>
@@ -66,24 +76,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>findbugs-maven-plugin</artifactId>
-				<version>3.0.0</version>
 
-				<executions>
-					<execution>
-						<id>fb</id>
-						<goals>
-							<goal>findbugs</goal>
-						</goals>
-						<phase>compile</phase>
-					</execution>
-				</executions>
-				<configuration>
-					<includeFilterFile>src\main\resources\find-bugs.xml</includeFilterFile>
-				</configuration>
-			</plugin>
 		</plugins>
 	</build>
 </project>
