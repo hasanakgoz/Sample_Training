@@ -12,10 +12,11 @@ import javax.crypto.spec.SecretKeySpec;
 import javax.naming.Context;
 
 public class Passwords {
-	private String SECRET_PASSWORD = "letMeIn!";
+	private String SEC_PASSWORD = "letMeIn!";
 
 	public Passwords() throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException,
 			IllegalBlockSizeException, BadPaddingException {
+		System.out.println(SEC_PASSWORD);
 		Properties props = new Properties();
 		props.put(Context.SECURITY_CREDENTIALS, "p@ssw0rd");
 
