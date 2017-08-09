@@ -57,7 +57,6 @@
 							<goal>check</goal>
 						</goals>
 						<configuration>
-							<sourceDirectories>${project.basedir}</sourceDirectories>
 							<includes>pom.xml,src/**/*.java,src/**/*.properties,src/**/*.xml</includes>
 							<excludes>**/generated/**</excludes>
 							<outputFile>${checkstyle.reports.dir}/checkstyle-result.xml</outputFile>
