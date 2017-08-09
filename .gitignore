@@ -3,5 +3,9 @@
 /.settings/
 *.project
 *.class
+<<<<<<< HEAD
 /.pmd
 /.ruleset
+=======
+/reports/
+>>>>>>> branch 'master' of https://github.com/sandeepvalapi/Sample_Training.git
