@@ -4,7 +4,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>cw</groupId>
+	<groupId>org.deloitte</groupId>
 	<artifactId>project</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
@@ -63,18 +63,6 @@
 					</plugins>
 				</pluginManagement>
 			</build>
-		</profile>
-
-		<profile>
-			<id>sonar</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<properties>
-				<sonar.jdbc.url>jdbc:mysql://localhost:3306/sonar</sonar.jdbc.url>
-				<sonar.jdbc.driver>com.mysql.jdbc.Driver</sonar.jdbc.driver>
-				<sonar.host.url>http://localhost:9000</sonar.host.url>
-			</properties>
 		</profile>
 	</profiles>
 </project>
