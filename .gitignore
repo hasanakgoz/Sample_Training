@@ -7,3 +7,4 @@
 /.ruleset
 /reports/
 
+${checkstyle.reports.dir}/checkstyle-result.xml
