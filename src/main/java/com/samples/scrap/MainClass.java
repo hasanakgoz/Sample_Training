@@ -10,8 +10,6 @@ public class MainClass {
 	private String secondary2;
 	private String primary3;
 	private String secondary4;
-	
-	
 
 	public String getPrimary() {
 		return primary;

@@ -272,7 +272,7 @@ under the License.
     <activeByDefault>true</activeByDefault>
   </activation>
   <properties>
-    <sonar.host.url>http://sonardocker.technology:9000/sonar</sonar.host.url>
+    <sonar.host.url>http://localhost:9000</sonar.host.url>
   </properties>
 </profile>
 </profiles>
