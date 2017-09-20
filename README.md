@@ -12,6 +12,6 @@ Usage
 
         mvn clean install
 
-* Analyze it with SonarQube using Maven:
+* Analyze it with SonarQube using Apache Maven:
 
         mvn sonar:sonar
